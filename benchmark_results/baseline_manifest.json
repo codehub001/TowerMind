@@ -1,0 +1,167 @@
+{
+  "experiment_id": "baseline_seed_101",
+  "timestamp": "2026-11-06T13:24:02.566458+00:00",
+  "config": {
+    "experiment_id": "baseline_seed_101",
+    "seed": 101,
+    "total_timesteps": 512,
+    "segment_timesteps": 256,
+    "eval_episodes": 2,
+    "learning_rate": 0.00025,
+    "num_steps": 256,
+    "gamma": 0.995,
+    "reward_profile_id": "baseline-v1",
+    "map_name": "default"
+  },
+  "baseline_metrics": {
+    "episodes": 2,
+    "win_rate": 0.0,
+    "mean_waves": 10.0,
+    "mean_lives": 17.5,
+    "mean_reward": 13.95,
+    "mean_steps": 3000.0,
+    "wins": 0,
+    "losses": 0,
+    "legality_rate": 0.9922,
+    "repair_rate": 0.0078,
+    "extra": {
+      "legality_summary": {
+        "sampled": 6000,
+        "legal": 5953,
+        "illegal": 47,
+        "repaired": 47,
+        "passes": 5853,
+        "builds": 100,
+        "legality_rate": 0.9922,
+        "repair_rate": 0.0078,
+        "reasons": {
+          "out_of_bounds": 0,
+          "unaffordable_or_unbuildable": 47,
+          "invalid_shape": 0
+        }
+      }
+    }
+  },
+  "final_metrics": {
+    "episodes": 2,
+    "win_rate": 0.0,
+    "mean_waves": 10.0,
+    "mean_lives": 20.0,
+    "mean_reward": 17.85,
+    "mean_steps": 3000.0,
+    "wins": 0,
+    "losses": 0,
+    "legality_rate": 0.9907,
+    "repair_rate": 0.0093,
+    "extra": {
+      "legality_summary": {
+        "sampled": 6000,
+        "legal": 5944,
+        "illegal": 56,
+        "repaired": 56,
+        "passes": 5833,
+        "builds": 111,
+        "legality_rate": 0.9907,
+        "repair_rate": 0.0093,
+        "reasons": {
+          "out_of_bounds": 0,
+          "unaffordable_or_unbuildable": 56,
+          "invalid_shape": 0
+        }
+      }
+    }
+  },
+  "segments": [
+    {
+      "segment_index": 1,
+      "timesteps_so_far": 256,
+      "active_profile_id": "baseline-v1_1",
+      "proposed_profile_id": "baseline-v1_1",
+      "decision": "promoted",
+      "metrics": {
+        "episodes": 2,
+        "win_rate": 0.0,
+        "mean_waves": 9.5,
+        "mean_lives": 16.5,
+        "mean_reward": 12.35,
+        "mean_steps": 3000.0,
+        "wins": 0,
+        "losses": 0,
+        "legality_rate": 0.9927,
+        "repair_rate": 0.0073,
+        "extra": {
+          "legality_summary": {
+            "sampled": 6000,
+            "legal": 5956,
+            "illegal": 44,
+            "repaired": 44,
+            "passes": 5858,
+            "builds": 98,
+            "legality_rate": 0.9927,
+            "repair_rate": 0.0073,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 44,
+              "invalid_shape": 0
+            }
+          }
+        }
+      },
+      "advisor_rationale": "Default baseline environment reward configuration.",
+      "advisor_hypothesis": "Baseline benchmark performance."
+    },
+    {
+      "segment_index": 2,
+      "timesteps_so_far": 512,
+      "active_profile_id": "baseline-v1_2",
+      "proposed_profile_id": "baseline-v1_2",
+      "decision": "promoted",
+      "metrics": {
+        "episodes": 2,
+        "win_rate": 0.0,
+        "mean_waves": 10.0,
+        "mean_lives": 20.0,
+        "mean_reward": 17.85,
+        "mean_steps": 3000.0,
+        "wins": 0,
+        "losses": 0,
+        "legality_rate": 0.9907,
+        "repair_rate": 0.0093,
+        "extra": {
+          "legality_summary": {
+            "sampled": 6000,
+            "legal": 5944,
+            "illegal": 56,
+            "repaired": 56,
+            "passes": 5833,
+            "builds": 111,
+            "legality_rate": 0.9907,
+            "repair_rate": 0.0093,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 56,
+              "invalid_shape": 0
+            }
+          }
+        }
+      },
+      "advisor_rationale": "Default baseline environment reward configuration.",
+      "advisor_hypothesis": "Baseline benchmark performance."
+    }
+  ],
+  "telemetry": {
+    "total_requests": 2,
+    "total_retries": 0,
+    "total_fallbacks": 0,
+    "tokens": {
+      "prompt_tokens": 300,
+      "completion_tokens": 160,
+      "total_tokens": 460,
+      "estimated_cost_usd": 0.001
+    }
+  },
+  "checkpoint_paths": [
+    "benchmark_results/baseline_checkpoints/ckpt_seg_1.pt",
+    "benchmark_results/baseline_checkpoints/ckpt_seg_2.pt"
+  ]
+}

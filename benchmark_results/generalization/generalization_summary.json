@@ -1,0 +1,147 @@
+{
+  "training_maps": [
+    "s_curve",
+    "zigzag"
+  ],
+  "heldout_maps": [
+    "chokepoint",
+    "spiral"
+  ],
+  "episodes_per_map": 1,
+  "train_mean_win_rate": 0.0,
+  "heldout_mean_win_rate": 0.0,
+  "win_rate_generalization_gap": 0.0,
+  "train_mean_waves": 3.5,
+  "heldout_mean_waves": 3.5,
+  "waves_generalization_gap": 0.0,
+  "per_map_results": {
+    "s_curve": {
+      "type": "training",
+      "metrics": {
+        "episodes": 1,
+        "win_rate": 0.0,
+        "mean_waves": 4.0,
+        "mean_lives": 0.0,
+        "mean_reward": -23.4,
+        "mean_steps": 1367.0,
+        "wins": 0,
+        "losses": 1,
+        "legality_rate": 1.0,
+        "repair_rate": 0.0,
+        "extra": {
+          "legality_summary": {
+            "sampled": 1367,
+            "legal": 1367,
+            "illegal": 0,
+            "repaired": 0,
+            "passes": 1360,
+            "builds": 7,
+            "legality_rate": 1.0,
+            "repair_rate": 0.0,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 0,
+              "invalid_shape": 0
+            }
+          }
+        }
+      }
+    },
+    "zigzag": {
+      "type": "training",
+      "metrics": {
+        "episodes": 1,
+        "win_rate": 0.0,
+        "mean_waves": 3.0,
+        "mean_lives": 0.0,
+        "mean_reward": -24.3,
+        "mean_steps": 298.0,
+        "wins": 0,
+        "losses": 1,
+        "legality_rate": 1.0,
+        "repair_rate": 0.0,
+        "extra": {
+          "legality_summary": {
+            "sampled": 298,
+            "legal": 298,
+            "illegal": 0,
+            "repaired": 0,
+            "passes": 294,
+            "builds": 4,
+            "legality_rate": 1.0,
+            "repair_rate": 0.0,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 0,
+              "invalid_shape": 0
+            }
+          }
+        }
+      }
+    },
+    "chokepoint": {
+      "type": "heldout",
+      "metrics": {
+        "episodes": 1,
+        "win_rate": 0.0,
+        "mean_waves": 3.0,
+        "mean_lives": 0.0,
+        "mean_reward": -24.2,
+        "mean_steps": 649.0,
+        "wins": 0,
+        "losses": 1,
+        "legality_rate": 1.0,
+        "repair_rate": 0.0,
+        "extra": {
+          "legality_summary": {
+            "sampled": 649,
+            "legal": 649,
+            "illegal": 0,
+            "repaired": 0,
+            "passes": 645,
+            "builds": 4,
+            "legality_rate": 1.0,
+            "repair_rate": 0.0,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 0,
+              "invalid_shape": 0
+            }
+          }
+        }
+      }
+    },
+    "spiral": {
+      "type": "heldout",
+      "metrics": {
+        "episodes": 1,
+        "win_rate": 0.0,
+        "mean_waves": 4.0,
+        "mean_lives": -4.0,
+        "mean_reward": -27.9,
+        "mean_steps": 556.0,
+        "wins": 0,
+        "losses": 1,
+        "legality_rate": 1.0,
+        "repair_rate": 0.0,
+        "extra": {
+          "legality_summary": {
+            "sampled": 556,
+            "legal": 556,
+            "illegal": 0,
+            "repaired": 0,
+            "passes": 550,
+            "builds": 6,
+            "legality_rate": 1.0,
+            "repair_rate": 0.0,
+            "reasons": {
+              "out_of_bounds": 0,
+              "unaffordable_or_unbuildable": 0,
+              "invalid_shape": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}
